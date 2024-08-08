@@ -22,8 +22,14 @@ TEST( TestGroup1, TestGroup1_TestCase2 )
     TEST_ASSERT_EQUAL_INT32( test_group_1_status, 0 );
 }
 
+TEST( TestGroup1, TestGroup1_TestCase3 )
+{
+    TEST_FAIL_MESSAGE( "Intended to fail" );
+}
+
 TEST_GROUP_RUNNER( TestGroup1 )
 {
     RUN_TEST_CASE( TestGroup1, TestGroup1_TestCase1 );
     // RUN_TEST_CASE( TestGroup1, TestGroup1_TestCase2 );
+    // RUN_TEST_CASE( TestGroup1, TestGroup1_TestCase3 );
 }
